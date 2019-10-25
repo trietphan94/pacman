@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/pacman/static/css/main.f688d532.chunk.css",
-    "main.js": "/pacman/static/js/main.6585e1c8.chunk.js",
-    "main.js.map": "/pacman/static/js/main.6585e1c8.chunk.js.map",
+    "main.js": "/pacman/static/js/main.09f08211.chunk.js",
+    "main.js.map": "/pacman/static/js/main.09f08211.chunk.js.map",
     "runtime~main.js": "/pacman/static/js/runtime~main.e4d35c4f.js",
     "runtime~main.js.map": "/pacman/static/js/runtime~main.e4d35c4f.js.map",
-    "static/js/2.18b58bcf.chunk.js": "/pacman/static/js/2.18b58bcf.chunk.js",
-    "static/js/2.18b58bcf.chunk.js.map": "/pacman/static/js/2.18b58bcf.chunk.js.map",
+    "static/js/2.11a6a1c5.chunk.js": "/pacman/static/js/2.11a6a1c5.chunk.js",
+    "static/js/2.11a6a1c5.chunk.js.map": "/pacman/static/js/2.11a6a1c5.chunk.js.map",
     "index.html": "/pacman/index.html",
-    "precache-manifest.1965fc37c79481589151fba94141a2eb.js": "/pacman/precache-manifest.1965fc37c79481589151fba94141a2eb.js",
+    "precache-manifest.414a8bc0476df477ef5583dc0f2b11fe.js": "/pacman/precache-manifest.414a8bc0476df477ef5583dc0f2b11fe.js",
     "service-worker.js": "/pacman/service-worker.js",
     "static/css/main.f688d532.chunk.css.map": "/pacman/static/css/main.f688d532.chunk.css.map",
-    "static/media/pacman.png": "/pacman/static/media/pacman.f00e90b0.png"
+    "static/media/pacman2.png": "/pacman/static/media/pacman2.1b7b3dc6.png"
   }
 }
