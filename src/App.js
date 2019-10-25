@@ -3,7 +3,6 @@ import './App.css';
 import pacmanIcon from './pacman.png';
 
 function PacMan() {
-  // Correct! There is no need to specify the key here:
   return <span><img src={pacmanIcon} alt="pacman" width="20px"
                     height="20px"></img></span>;
 }
@@ -78,21 +77,25 @@ class App extends React.Component {
       }
     } else if (e.keyCode === 39) {
       console.log('Right');
-      this.setState(prevState => ({
-        pacman: {
-          ...prevState.pacman,
-          xLocation: prevState.pacman.xLocation + 1
-        }
-      }));
+      if (this.state.pacman.xLocation < this.state.height - 1) {
+        this.setState(prevState => ({
+          pacman: {
+            ...prevState.pacman,
+            xLocation: prevState.pacman.xLocation + 1
+          }
+        }));
+      }
     } else if (e.keyCode === 37) {
       console.log('Left');
 
-      this.setState(prevState => ({
-        pacman: {
-          ...prevState.pacman,
-          xLocation: prevState.pacman.xLocation - 1
-        }
-      }));
+      if (this.state.pacman.xLocation > 0) {
+        this.setState(prevState => ({
+          pacman: {
+            ...prevState.pacman,
+            xLocation: prevState.pacman.xLocation - 1
+          }
+        }));
+      }
     }
   };
 
