@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "pacmantest.github.io/static/css/main.f688d532.chunk.css",
+    "main.js": "pacmantest.github.io/static/js/main.e707f9df.chunk.js",
+    "main.js.map": "pacmantest.github.io/static/js/main.e707f9df.chunk.js.map",
+    "runtime~main.js": "pacmantest.github.io/static/js/runtime~main.e70689cc.js",
+    "runtime~main.js.map": "pacmantest.github.io/static/js/runtime~main.e70689cc.js.map",
+    "static/js/2.18b58bcf.chunk.js": "pacmantest.github.io/static/js/2.18b58bcf.chunk.js",
+    "static/js/2.18b58bcf.chunk.js.map": "pacmantest.github.io/static/js/2.18b58bcf.chunk.js.map",
+    "index.html": "pacmantest.github.io/index.html",
+    "precache-manifest.2fabbe3e65138bd9af77343ba0a06e79.js": "pacmantest.github.io/precache-manifest.2fabbe3e65138bd9af77343ba0a06e79.js",
+    "service-worker.js": "pacmantest.github.io/service-worker.js",
+    "static/css/main.f688d532.chunk.css.map": "pacmantest.github.io/static/css/main.f688d532.chunk.css.map",
+    "static/media/pacman.png": "pacmantest.github.io/static/media/pacman.f00e90b0.png"
+  }
+}
