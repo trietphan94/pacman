@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
-import pacmanIcon from './pacman.png';
+import pacmanIcon1 from './pacman1.png';
+import pacmanIcon2 from './pacman2.png';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faCircle} from '@fortawesome/free-solid-svg-icons'
 
-function PacMan() {
-  return <span><img src={pacmanIcon} alt="pacman" width="20px"
+function PacMan(props) {
+  let status = props.status;
+  console.log(status);
+  return <span><img src={status ? pacmanIcon2 : pacmanIcon1} alt="pacman" width="20px"
                     height="20px" style={{margin: '0px 2.5px'}}></img></span>;
 }
 
@@ -15,17 +18,16 @@ function InitTable(props) {
   const foodList = props.foodList;
   let pacman = props.pacman;
   let listItems = [];
+
   for (let i = 0; i < width; i++) {
     for (let j = 0; j < height; j++) {
       if (i === pacman.yLocation && j === pacman.xLocation) {
-        listItems.push(<PacMan key={i + '-' + j}/>)
+        listItems.push(<PacMan key={i + '-' + j} status={pacman.status}/>)
       } else {
-        // let isFood = foodList.find(food => food.x === j && food.y === i);
-        //Test
-        let isFood = foodList.find(food => food.y === i);
+        let isFood = foodList.find(food => food.x === j && food.y === i);
         if (isFood) {
-          listItems.push(<span className="block"><FontAwesomeIcon icon={faCircle} color="white"
-                                                                  className="food"/></span>)
+          listItems.push(<span className="block" key={i + '-' + j}><FontAwesomeIcon icon={faCircle} color="white"
+                                                                                    className="food"/></span>)
         } else {
           listItems.push(<span key={i + '-' + j} className="block"></span>)
         }
@@ -48,75 +50,99 @@ class App extends React.Component {
       pacman: {
         xLocation: 0,
         yLocation: 0,
-        totalFoods: 0
+        totalFoods: 0,
+        status: true,
       },
-      foodList: [
-        {
-          x: 3,
-          y: 4
-        },
-        {
-          x: 1,
-          y: 2
-        }
-      ]
+      foodList: []
     };
 
     this._handleKeyDown = this._handleKeyDown.bind(this);
   }
 
-  componentDidMount() {
-    document.addEventListener("keydown", this._handleKeyDown);
-  }
-
-
   componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+
+  componentDidMount() {
+    for (let i = 0; i < this.state.width; i++) {
+      for (let j = 0; j < this.state.height; j++) {
+        this.setState(prevState => ({
+          foodList: [...prevState.foodList, {
+            x: j,
+            y: i
+          }]
+        }))
+      }
+    }
+    console.log(this.state);
     document.addEventListener("keydown", this._handleKeyDown);
   }
 
-  _handleKeyDown = (e) => {
-    if (e.keyCode === 38) {
-      if (this.state.pacman.yLocation > 0) {
+  validatePacman = (location, value) => {
+    if (location === 'xLocation' && value <= this.state.height - 1 && value >= 0) {
+      return true;
+    } else if (location === 'yLocation' && value <= this.state.width - 1 && value >= 0) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  detectPacman = (location, value) => {
+    let self = this;
+    if (location) {
+      if (this.validatePacman(location, value)) {
         this.setState(prevState => ({
           pacman: {
             ...prevState.pacman,
-            yLocation: prevState.pacman.yLocation - 1
+            [location]: value,
+            status: !prevState.pacman.status
           }
         }));
+      } else {
+        clearInterval(this.timerID);
+        this.timerID = setInterval(function () {
+          self.detectPacman();
+        }, 500)
       }
+    } else {
+      this.setState(prevState => ({
+        pacman: {
+          ...prevState.pacman,
+          status: !prevState.pacman.status
+        }
+      }));
+    }
+  };
+
+  _handleKeyDown = (e) => {
+    let self = this;
+    if (e.keyCode === 38) {
+      clearInterval(this.timerID);
+      this.timerID = setInterval(function () {
+        self.detectPacman('yLocation', self.state.pacman.yLocation - 1)
+      }, 500);
       console.log('Up');
     } else if (e.keyCode === 40) {
       console.log('Down');
 
-      if (this.state.pacman.yLocation < this.state.width - 1) {
-        this.setState(prevState => ({
-          pacman: {
-            ...prevState.pacman,
-            yLocation: prevState.pacman.yLocation + 1
-          }
-        }));
-      }
+      clearInterval(this.timerID);
+      this.timerID = setInterval(function () {
+        self.detectPacman('yLocation', self.state.pacman.yLocation + 1)
+      }, 500)
     } else if (e.keyCode === 39) {
       console.log('Right');
-      if (this.state.pacman.xLocation < this.state.height - 1) {
-        this.setState(prevState => ({
-          pacman: {
-            ...prevState.pacman,
-            xLocation: prevState.pacman.xLocation + 1
-          }
-        }));
-      }
+      clearInterval(this.timerID);
+      this.timerID = setInterval(function () {
+        self.detectPacman('xLocation', self.state.pacman.xLocation + 1)
+      }, 500)
     } else if (e.keyCode === 37) {
       console.log('Left');
-
-      if (this.state.pacman.xLocation > 0) {
-        this.setState(prevState => ({
-          pacman: {
-            ...prevState.pacman,
-            xLocation: prevState.pacman.xLocation - 1
-          }
-        }));
-      }
+      clearInterval(this.timerID);
+      this.timerID = setInterval(function () {
+        self.detectPacman('xLocation', self.state.pacman.xLocation - 1)
+      }, 500)
     }
   };
 
