@@ -1,15 +1,18 @@
 import React from 'react';
 import './App.css';
 import pacmanIcon from './pacman.png';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faCircle} from '@fortawesome/free-solid-svg-icons'
 
 function PacMan() {
   return <span><img src={pacmanIcon} alt="pacman" width="20px"
-                    height="20px"></img></span>;
+                    height="20px" style={{margin: '0px 2.5px'}}></img></span>;
 }
 
 function InitTable(props) {
   const width = props.width;
   const height = props.height;
+  const foodList = props.foodList;
   let pacman = props.pacman;
   let listItems = [];
   for (let i = 0; i < width; i++) {
@@ -17,10 +20,18 @@ function InitTable(props) {
       if (i === pacman.yLocation && j === pacman.xLocation) {
         listItems.push(<PacMan key={i + '-' + j}/>)
       } else {
-        listItems.push(<span key={i + '-' + j}>*</span>)
+        // let isFood = foodList.find(food => food.x === j && food.y === i);
+        //Test
+        let isFood = foodList.find(food => food.y === i);
+        if (isFood) {
+          listItems.push(<span className="block"><FontAwesomeIcon icon={faCircle} color="white"
+                                                                  className="food"/></span>)
+        } else {
+          listItems.push(<span key={i + '-' + j} className="block"></span>)
+        }
       }
     }
-    listItems.push(<br key={i}/>)
+    listItems.push(<div style={{clear: 'both'}} key={i}/>)
   }
 
   return (
@@ -33,12 +44,22 @@ class App extends React.Component {
     super(props);
     this.state = {
       width: 20,
-      height: 100,
+      height: 30,
       pacman: {
         xLocation: 0,
         yLocation: 0,
         totalFoods: 0
-      }
+      },
+      foodList: [
+        {
+          x: 3,
+          y: 4
+        },
+        {
+          x: 1,
+          y: 2
+        }
+      ]
     };
 
     this._handleKeyDown = this._handleKeyDown.bind(this);
@@ -104,7 +125,8 @@ class App extends React.Component {
 
     return (
       <div>
-        <InitTable width={this.state.width} height={this.state.height} pacman={this.state.pacman}/>
+        <InitTable width={this.state.width} height={this.state.height} pacman={this.state.pacman}
+                   foodList={this.state.foodList}/>
       </div>
 
 

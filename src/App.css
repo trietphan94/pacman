@@ -28,6 +28,20 @@
     position: absolute;
 }
 
+.block {
+    width: 20px;
+    height: 20px;
+    backgroundColor: black;
+    display: inline-block;
+    margin: 0px 2.5px;
+}
+
+.food {
+    display: block;
+    width: 10px;
+    height: 20px;
+}
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
