@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.f688d532.chunk.css",
-    "main.js": "/static/js/main.2a3a0b5b.chunk.js",
-    "main.js.map": "/static/js/main.2a3a0b5b.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.e7932d28.js",
-    "runtime~main.js.map": "/static/js/runtime~main.e7932d28.js.map",
-    "static/js/2.18b58bcf.chunk.js": "/static/js/2.18b58bcf.chunk.js",
-    "static/js/2.18b58bcf.chunk.js.map": "/static/js/2.18b58bcf.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b89d8a42c22bac81673bfbe7a732f682.js": "/precache-manifest.b89d8a42c22bac81673bfbe7a732f682.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f688d532.chunk.css.map": "/static/css/main.f688d532.chunk.css.map",
-    "static/media/pacman.png": "/static/media/pacman.f00e90b0.png"
+    "main.css": "/trietphan94/thefogteam1994.github.io/static/css/main.f688d532.chunk.css",
+    "main.js": "/trietphan94/thefogteam1994.github.io/static/js/main.3693fd2c.chunk.js",
+    "main.js.map": "/trietphan94/thefogteam1994.github.io/static/js/main.3693fd2c.chunk.js.map",
+    "runtime~main.js": "/trietphan94/thefogteam1994.github.io/static/js/runtime~main.c374c294.js",
+    "runtime~main.js.map": "/trietphan94/thefogteam1994.github.io/static/js/runtime~main.c374c294.js.map",
+    "static/js/2.18b58bcf.chunk.js": "/trietphan94/thefogteam1994.github.io/static/js/2.18b58bcf.chunk.js",
+    "static/js/2.18b58bcf.chunk.js.map": "/trietphan94/thefogteam1994.github.io/static/js/2.18b58bcf.chunk.js.map",
+    "index.html": "/trietphan94/thefogteam1994.github.io/index.html",
+    "precache-manifest.e0eb12bd2420db465b5e2a594abda8e9.js": "/trietphan94/thefogteam1994.github.io/precache-manifest.e0eb12bd2420db465b5e2a594abda8e9.js",
+    "service-worker.js": "/trietphan94/thefogteam1994.github.io/service-worker.js",
+    "static/css/main.f688d532.chunk.css.map": "/trietphan94/thefogteam1994.github.io/static/css/main.f688d532.chunk.css.map",
+    "static/media/pacman.png": "/trietphan94/thefogteam1994.github.io/static/media/pacman.f00e90b0.png"
   }
 }
