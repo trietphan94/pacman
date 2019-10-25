@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/trietphan94/thefogteam1994.github.io/static/css/main.f688d532.chunk.css",
-    "main.js": "/trietphan94/thefogteam1994.github.io/static/js/main.3693fd2c.chunk.js",
-    "main.js.map": "/trietphan94/thefogteam1994.github.io/static/js/main.3693fd2c.chunk.js.map",
-    "runtime~main.js": "/trietphan94/thefogteam1994.github.io/static/js/runtime~main.c374c294.js",
-    "runtime~main.js.map": "/trietphan94/thefogteam1994.github.io/static/js/runtime~main.c374c294.js.map",
-    "static/js/2.18b58bcf.chunk.js": "/trietphan94/thefogteam1994.github.io/static/js/2.18b58bcf.chunk.js",
-    "static/js/2.18b58bcf.chunk.js.map": "/trietphan94/thefogteam1994.github.io/static/js/2.18b58bcf.chunk.js.map",
-    "index.html": "/trietphan94/thefogteam1994.github.io/index.html",
-    "precache-manifest.e0eb12bd2420db465b5e2a594abda8e9.js": "/trietphan94/thefogteam1994.github.io/precache-manifest.e0eb12bd2420db465b5e2a594abda8e9.js",
-    "service-worker.js": "/trietphan94/thefogteam1994.github.io/service-worker.js",
-    "static/css/main.f688d532.chunk.css.map": "/trietphan94/thefogteam1994.github.io/static/css/main.f688d532.chunk.css.map",
-    "static/media/pacman.png": "/trietphan94/thefogteam1994.github.io/static/media/pacman.f00e90b0.png"
+    "main.css": "/trietphan94/thefogteam1994.github.io.git/static/css/main.f688d532.chunk.css",
+    "main.js": "/trietphan94/thefogteam1994.github.io.git/static/js/main.f0c5e212.chunk.js",
+    "main.js.map": "/trietphan94/thefogteam1994.github.io.git/static/js/main.f0c5e212.chunk.js.map",
+    "runtime~main.js": "/trietphan94/thefogteam1994.github.io.git/static/js/runtime~main.df23fdac.js",
+    "runtime~main.js.map": "/trietphan94/thefogteam1994.github.io.git/static/js/runtime~main.df23fdac.js.map",
+    "static/js/2.18b58bcf.chunk.js": "/trietphan94/thefogteam1994.github.io.git/static/js/2.18b58bcf.chunk.js",
+    "static/js/2.18b58bcf.chunk.js.map": "/trietphan94/thefogteam1994.github.io.git/static/js/2.18b58bcf.chunk.js.map",
+    "index.html": "/trietphan94/thefogteam1994.github.io.git/index.html",
+    "precache-manifest.cacd001cec66986f61dc2917ae2054e3.js": "/trietphan94/thefogteam1994.github.io.git/precache-manifest.cacd001cec66986f61dc2917ae2054e3.js",
+    "service-worker.js": "/trietphan94/thefogteam1994.github.io.git/service-worker.js",
+    "static/css/main.f688d532.chunk.css.map": "/trietphan94/thefogteam1994.github.io.git/static/css/main.f688d532.chunk.css.map",
+    "static/media/pacman.png": "/trietphan94/thefogteam1994.github.io.git/static/media/pacman.f00e90b0.png"
   }
 }
