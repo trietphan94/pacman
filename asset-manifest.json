@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/trietphan94/thefogteam1994.github.io.git/static/css/main.f688d532.chunk.css",
-    "main.js": "/trietphan94/thefogteam1994.github.io.git/static/js/main.f0c5e212.chunk.js",
-    "main.js.map": "/trietphan94/thefogteam1994.github.io.git/static/js/main.f0c5e212.chunk.js.map",
-    "runtime~main.js": "/trietphan94/thefogteam1994.github.io.git/static/js/runtime~main.df23fdac.js",
-    "runtime~main.js.map": "/trietphan94/thefogteam1994.github.io.git/static/js/runtime~main.df23fdac.js.map",
-    "static/js/2.18b58bcf.chunk.js": "/trietphan94/thefogteam1994.github.io.git/static/js/2.18b58bcf.chunk.js",
-    "static/js/2.18b58bcf.chunk.js.map": "/trietphan94/thefogteam1994.github.io.git/static/js/2.18b58bcf.chunk.js.map",
-    "index.html": "/trietphan94/thefogteam1994.github.io.git/index.html",
-    "precache-manifest.cacd001cec66986f61dc2917ae2054e3.js": "/trietphan94/thefogteam1994.github.io.git/precache-manifest.cacd001cec66986f61dc2917ae2054e3.js",
-    "service-worker.js": "/trietphan94/thefogteam1994.github.io.git/service-worker.js",
-    "static/css/main.f688d532.chunk.css.map": "/trietphan94/thefogteam1994.github.io.git/static/css/main.f688d532.chunk.css.map",
-    "static/media/pacman.png": "/trietphan94/thefogteam1994.github.io.git/static/media/pacman.f00e90b0.png"
+    "main.css": "/pacman/static/css/main.f688d532.chunk.css",
+    "main.js": "/pacman/static/js/main.6585e1c8.chunk.js",
+    "main.js.map": "/pacman/static/js/main.6585e1c8.chunk.js.map",
+    "runtime~main.js": "/pacman/static/js/runtime~main.e4d35c4f.js",
+    "runtime~main.js.map": "/pacman/static/js/runtime~main.e4d35c4f.js.map",
+    "static/js/2.18b58bcf.chunk.js": "/pacman/static/js/2.18b58bcf.chunk.js",
+    "static/js/2.18b58bcf.chunk.js.map": "/pacman/static/js/2.18b58bcf.chunk.js.map",
+    "index.html": "/pacman/index.html",
+    "precache-manifest.1965fc37c79481589151fba94141a2eb.js": "/pacman/precache-manifest.1965fc37c79481589151fba94141a2eb.js",
+    "service-worker.js": "/pacman/service-worker.js",
+    "static/css/main.f688d532.chunk.css.map": "/pacman/static/css/main.f688d532.chunk.css.map",
+    "static/media/pacman.png": "/pacman/static/media/pacman.f00e90b0.png"
   }
 }
