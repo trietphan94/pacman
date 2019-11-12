@@ -42,6 +42,12 @@
     height: 20px;
 }
 
+.wall {
+    display: block;
+    width: 10px;
+    height: 20px;
+}
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
